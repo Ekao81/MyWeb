@@ -1,0 +1,90 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+
+}
+
+body {
+    margin: 0;
+    position: relative;
+   
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* background */
+
+.body-background {
+    position: absolute;
+    inset: 0;
+    filter: blur(60px);
+    z-index: 1;
+}
+
+.background {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    background: linear-gradient(to top, #6C93CF 0%, #CFACC2 100%);
+    -webkit-clip-path: polygon(94% 56%, 96% 100%, 87% 98%, 37% 2%, 9% 48%, 0% 25%); clip-path: polygon(94% 56%, 96% 100%, 87% 98%, 37% 2%, 9% 48%, 0% 25%);
+}
+
+.date {
+    margin: 0 2rem;
+}
+
+main {
+    max-width: 1200px;
+    width: 70%;
+    margin: 0 auto;
+    position: inherit;
+    z-index: 3;
+    background-color: rgba(219, 174, 174, 0.3);
+    padding: 20px;
+}
+
+
+/* header */
+
+.header {
+    position: relative;
+    block-size:60vh;
+}
+.header-img {
+    position: absolute;
+    inset: 0;
+    background-image: url(https://lh3.googleusercontent.com/C5bjvadI0qrq7lYwFqoBlSxAwxzreYCzBRNS9iKgOb9VHMzmfUtxUqhN-QqqAyPIKZr88SL-bpaRxNfXiLMN4IVEtNAty1o8M32cAlOtJaS9aAi1U_Q_7dQOzivD4SI0aIhqpMgrkw=w2400);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+}
+
+.header-img-2 {
+    position: absolute;
+    inset: 0;
+    background-image: url(https://lh3.googleusercontent.com/mcR2_t4w2EjF7ZXv5_bW6DVgxeS90vj-1u_Jkl9Mu08tA-710eM5nL7jP_BxQmYjFj67-HByqZTBMRz7hJg3D8JU5qlF2Iwndjcdry-Yj1NZEP3tikV3347XleJR-8VlvlXTaFdXVg=w2400);
+    background-position: center;
+    background-size: 1000px;
+    background-repeat: no-repeat;
+    z-index: -1;
+}
+/* TEXT ABOUT THE PROJECT */
+
+.about-text {
+    width: 80%;
+    margin: 3rem auto;
+    padding: 20px;
+    background-color: rgba(219, 174, 174, 0.3);
+    font-family: 'Wix Madefor Display', sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.2;
+    word-spacing: 2px;
+}
