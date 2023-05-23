@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="test.css" > 
+    <link rel="stylesheet" href="index.css" > 
     <title>Document</title>
     <script type="text/javascript" src="script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,9 +13,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7e631a94cf.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <div class="wrapper">
+        
+        
         <header class="header">
             <button class="menu" aria-controls="primary-navigation" aria-expanded="false"></button>
             <div class="logo">
@@ -23,19 +27,20 @@
             </div>
             <nav class="tabs">
                 <ul class="primary-navigation" id="primary-navigation" data-visibility="false">
-                    <a href="#about">
+                    <a class="menu-link" href="#about">
                         <li class="list-item"><span class="li-number">01</span>about</li>
                     </a>
-                    <a href="#work-space">
+                    <a class="menu-link" href="#work-space">
                         <li class="list-item"><span class="li-number">02</span>work-space</li>
                     </a>
-                    <a href="#mind-space">
+                    <a class="menu-link" href="#mind-space">
                         <li class="list-item"><span class="li-number">03</span>mind-space</li>
                     </a>
-
+        
                 </ul>
             </nav>
         </header>
+        
         <section class="first-section">
             
                 <img class="img-1" src="https://lh3.googleusercontent.com/CEFoYTh9IVx1IUPys55yDgLCo8su5zSHVuBWHbVczOd8uX1arK62_oW9gDDHlxLSnX_CFcXF8LLxsWwP2vm8ngXK1zEKyoUZ5SZnqHtaxbYzawWXRTbnqyeLLyQfs10D46BkJ1gX1Q=w2400" alt="space" >
@@ -58,31 +63,38 @@
     </section>
 
     <section id="work-space" class="third-section">
-        <!-- <img src="" alt="" class="img-2"> -->
         <h1 class="item item-1">Work-space</h1>
         <div class="wrapper-work-items">
             <div class="card-container">
-                <div class="card">
-                  <div class="card-background card-background-1"></div>
-                  <div class="content">
-                    <div class="card-category">Web page</div>
-                    <h3 class="card-heading">LaCouvee Goaltending</h3>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-background card-background-2"></div>
-                  <div class="content">
-                    <div class="card-category">Blog</div>
-                    <h3 class="card-heading">Boneless Blog</h3>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="card-background card-background-3"></div>
-                  <div class="content">
-                    <div class="card-category">Landing page</div>
-                    <h3 class="card-heading">Drop-shiping</h3>
-                  </div>
-                </div>
+                <a href="LaCouvee-project.html" class="project-link">
+                    <div class="card">
+                      <div class="card-background card-background-1"></div>
+                      <div class="content">
+                        <div class="card-category">Web page</div>
+                        <h3 class="card-heading">LaCouvee Goaltending</h3>
+                      </div>
+                    </div>
+                </a>
+
+                <a href="Blog.html" class="project-link">
+                    <div class="card">
+                      <div class="card-background card-background-2"></div>
+                      <div class="content">
+                        <div class="card-category">Blog</div>
+                        <h3 class="card-heading">Boneless Blog</h3>
+                      </div>
+                    </div>
+                </a>
+
+                <a href="" class="project-link">
+                    <div class="card">
+                      <div class="card-background card-background-3"></div>
+                      <div class="content">
+                        <div class="card-category">Landing page</div>
+                        <h3 class="card-heading">Drop-shiping</h3>
+                      </div>
+                    </div>
+                </a>
             </div>
                 
             </div>
@@ -126,8 +138,26 @@
         </div>
     </section>
 
-    <section class="comment">
-
-    </section>
+    <footer id="comment" class="comment-section">
+        <h2>You can comment here using your gitHub account<br> comment on anything, I'd love to talk :)</h2>
+        <script src="https://giscus.app/client.js"
+        data-repo="Ekao81/MyWeb"
+        data-repo-id="R_kgDOJmpJVw"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOJmpJV84CWr-6"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+        </script>
+    </footer>
+    <a href="#comment">
+        <div class="comment-btn"><i class="fa-solid fa-comments-dollar fa-xs   "></i></div>
+    </a>
 </body>
 </html>
