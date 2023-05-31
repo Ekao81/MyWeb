@@ -2,13 +2,13 @@
 *::before,
 *::after {
     box-sizing: border-box;
-    font-size: 16px;
 }
 
 html {
     font-family: 'Times New Roman', Times, serif;
     margin: 0;
     scroll-behavior: smooth;
+    font-size: 62.5%;
     
 }
 
@@ -16,6 +16,11 @@ body {
     margin: 0;
 }
 
+:root {
+    --red: #c8472c;
+    --brown:#412a1e;
+    --yellow:#f8de3c;
+}
 
 .header {
     display: flex;
@@ -34,7 +39,7 @@ body {
 .primary-navigation {
     display: flex;
     list-style: none;
-    background: rgba(131, 99, 99, 0.3);
+    background: rgba(32, 16, 16, 0.3);
     margin: 0;
     
 }
@@ -64,7 +69,8 @@ img {
 
 .wrapper {
     margin: 0;
-    background-image: url(https://lh3.googleusercontent.com/44ReCMLqH7HmR78Z9z_8zMOUQfooN9FMoVsRtpStonar9KFMUn9byfwKJpEuZS7tG5uqXKmlI7k6305ANNfVa5dUE67lRgU79Ozrwwxyh6uuXTpW4VTvUBCcie4_ul3kRnJHcYqqxQ=w2400);
+    background-image: url(https://lh3.googleusercontent.com/pw/AJFCJaWE6mdwlJZe9la1zuEJfcZ8Xx2zXusPtRib2ZYDGHaQnpet6eaQ11RKZw3gcTTXfGD8c5pvD3kgCT8BtWNSNT-RooBsXayXDW9IFJszaDqMiLc50DA=w2400);
+
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -88,6 +94,53 @@ img {
   transform: scale(1.3);
 }
 
+/* CIRCLES */
+
+.circle-left-1 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: var(--yellow);
+    position: absolute;
+    border-radius: 10em;
+    left: 2rem;
+    top: 20px;
+}
+
+.circle-left-2 {
+    display: block;
+    width: 150px;
+    height: 150px;
+    background-color: var(--yellow);
+    position: absolute;
+    border-radius: 10em;
+    left: -20%;
+    top: 27%;
+}
+
+.circle-right-1 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: var(--yellow);
+    position: absolute;
+    border-radius: 10em;
+    right: 2%;
+    top: -20%;
+}
+
+.circle-right-2 {
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-color: var(--yellow);
+    position: absolute;
+    border-radius: 10em;
+    right: 20%;
+    top: 70%;
+    
+}
+
 /* FIRST SECTION */
 
 .first-section {
@@ -96,18 +149,9 @@ img {
     align-items: start;
     height: 60vh;
     position: relative;
-}
-
-
-.img-1 {
-    position: absolute;
-    max-width: 100%;
-    width: 300px;
-    aspect-ratio: 1 / 1.5;
-    top: 42%;
-    left: 5%;
     z-index: 1;
 }
+
 
 .first-section-text {
     width: 70%;
@@ -121,7 +165,7 @@ img {
 
 .first-section-text H1 {
     color: white;
-    font-size: 3rem;
+    font-size: 5rem;
     
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
@@ -131,13 +175,13 @@ img {
 
 .first-section-text H2 {
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     width: 80%;
     text-align: center;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 300;
     margin: 2rem auto;
-    background-color: rgba(139, 123, 123, 0.68);
+    background-color: rgba(200, 71, 44, 0.68);
 }
 /*  */
 /* SECOND SECTION */
@@ -151,7 +195,7 @@ img {
 .second-section h1 {
     color: rgb(0, 0, 0);
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     z-index: 2;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
@@ -161,21 +205,22 @@ img {
 .second-section p {
     color: rgb(16, 16, 17);
     text-align: start;
-    align-self: flex-end;
+    align-self: center;
     width: 70%;
-    font-size: 1.4rem;
+    font-size: 2.5rem;
     z-index: 2;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 300;
     background-color: rgba(240, 193, 193, 0.68);
     padding: 20px;
+    line-height: 1.3;
 }
 
 /*  */
 /* THIRD SECTION */
 
 .third-section {
-    background-color: rgb(45, 33, 80);
+    background-color: var(--brown);
     color: white;
     height: 100%;
     margin-bottom: 0;
@@ -183,13 +228,13 @@ img {
 
 .third-section h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     z-index: 2;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
     letter-spacing: 10px;
     color: white;
-    background-color: rgb(206, 22, 22);
+    background-color: var(--red);
 }
 
 
@@ -241,7 +286,7 @@ img {
     text-align: center;
     margin: 2em auto;
     line-height: 1.4;
-    font-size: 1.4rem;
+    font-size: 2rem;
     padding: 20px;
     padding-bottom: 100px;
     font-family: 'Rajdhani', sans-serif;
@@ -324,196 +369,22 @@ img {
     }
     .card-background-3 {
         background-image: url();
+        background-color: grey;
     }
 
-/* WORK BUTTON */
 
-.button-wrapper {
-    background: transparent;
-    display: flex;
-    justify-content: center;
-}
-
-.work-btn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 13rem;
-    height: 3rem;
-    background-size: 300% 300%;
-    backdrop-filter: blur(1rem);
-    border-radius: 5rem;
-    transition: 0.5s;
-    animation: gradient_301 5s ease infinite;
-    border: double 4px transparent;
-    background-image: linear-gradient(#212121, #212121),  linear-gradient(137.48deg, #ffdb3b 10%,#FE53BB 45%, #8F51EA 67%, #0044ff 87%);
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-  }
-  
-  #container-stars {
-    position: absolute;
-    z-index: -1;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    transition: 0.5s;
-    backdrop-filter: blur(1rem);
-    border-radius: 5rem;
-  }
-  
-  strong {
-    z-index: 2;
-    font-family: 'Avalors Personal Use';
-    font-size: 12px;
-    letter-spacing: 5px;
-    color: #FFFFFF;
-    text-shadow: 0 0 4px white;
-  }
-  
-  #glow {
-    position: absolute;
-    display: flex;
-    width: 12rem;
-  }
-  
-  .circle {
-    width: 100%;
-    height: 30px;
-    filter: blur(2rem);
-    animation: pulse_3011 4s infinite;
-    z-index: -1;
-  }
-  
-  .circle:nth-of-type(1) {
-    background: rgba(254, 83, 186, 0.636);
-  }
-  
-  .circle:nth-of-type(2) {
-    background: rgba(142, 81, 234, 0.704);
-  }
-  
-  .work-btn:hover #container-stars {
-    z-index: 1;
-    background-color: #212121;
-  }
-  
-  .work-btn:hover {
-    transform: scale(1.1)
-  }
-  
-  .work-btn:active {
-    border: double 4px #FE53BB;
-    background-origin: border-box;
-    background-clip: content-box, border-box;
-    animation: none;
-  }
-  
-  .work-btn:active .circle {
-    background: #FE53BB;
-  }
-  
-  #stars {
-    position: relative;
-    background: transparent;
-    width: 200rem;
-    height: 200rem;
-  }
-  
-  #stars::after {
-    content: "";
-    position: absolute;
-    top: -10rem;
-    left: -100rem;
-    width: 100%;
-    height: 100%;
-    animation: animStarRotate 90s linear infinite;
-  }
-  
-  #stars::after {
-    background-image: radial-gradient(#ffffff 1px, transparent 1%);
-    background-size: 50px 50px;
-  }
-  
-  #stars::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: -50%;
-    width: 170%;
-    height: 500%;
-    animation: animStar 60s linear infinite;
-  }
-  
-  #stars::before {
-    background-image: radial-gradient(#ffffff 1px, transparent 1%);
-    background-size: 50px 50px;
-    opacity: 0.5;
-  }
-  
-  @keyframes animStar {
-    from {
-      transform: translateY(0);
-    }
-  
-    to {
-      transform: translateY(-135rem);
-    }
-  }
-  
-  @keyframes animStarRotate {
-    from {
-      transform: rotate(360deg);
-    }
-  
-    to {
-      transform: rotate(0);
-    }
-  }
-  
-  @keyframes gradient_301 {
-    0% {
-      background-position: 0% 50%;
-    }
-  
-    50% {
-      background-position: 100% 50%;
-    }
-  
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-  
-  @keyframes pulse_3011 {
-    0% {
-      transform: scale(0.75);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
-    }
-  
-    70% {
-      transform: scale(1);
-      box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
-    }
-  
-    100% {
-      transform: scale(0.75);
-      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
-    }
-  }
-
-/*  */
 /* FOURTH SECTION */
 
 .fourth-section h1 {
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     z-index: 2;
     font-family: 'Rajdhani', sans-serif;
     font-weight: 700;
     letter-spacing: 10px;
     color: white;
-    background-color: rgb(153, 130, 130);
+    background-color: var(--red);
+    margin-top: 15rem;
 }
 
 .mind-space-content {
@@ -526,29 +397,49 @@ img {
 }
 
 .mind-space-content h3 {
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 200;
     width: 70%;
-    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 2rem;
+    line-height: 1.3;
 }
 
 .bigger {
     font-size: 4rem;
     font-weight: 400;
     line-height: .7;
+    font-family: 'Rajdhani', sans-serif;
+    font-weight: 700;
+    color: var(--brown);
+}
+
+.b-top {
+    border-top: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
+}
+
+.b-bottom  {
+    border-bottom: 2px solid;
+    border-left: 2px solid;
+    border-right: 2px solid;
 }
 
 .mind-space-content h2 {
-    font-size: 3rem;
+    font-size: 4rem;
     width: 80%;
-    margin: 0 auto;
+    margin: 5rem auto;
     text-align: center;
     margin-top: 4rem;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    padding: 10px;
 }
 
 .mind-space-content h4 {
-    font-size: 1rem;
+    font-size: 2rem;
      font-family: Arial, Helvetica, sans-serif;
     background-color: rgba(131, 99, 99, 0.5);
     padding: 30px;
@@ -561,21 +452,21 @@ img {
 .mind-space-content h5 {
     width: 80%;
     margin: 2rem auto;
-    font-size: 2rem;
+    font-size: 3rem;
     text-align: start;
 }
 
 .mind-space-content p {
-    font-size: 1.3rem;
+    font-size: 2rem;
     width: 60%;
-    margin: 0 auto;
+    margin: 1rem auto;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.4;
     
 }
 
 .mind-space-content li {
-    font-size: 1.3rem;
+    font-size: 2rem;
     width: 50%;
     margin: 1rem auto;
 }
@@ -593,31 +484,46 @@ img {
 
 .comment-section h2 {
   text-align: center;
-  font-size: 2rem;
-  background-color: rgba(254, 83, 186, 0.636);
+  font-size: 3rem;
   margin: 3rem;
   padding: 5px;
+  color: rgb(8, 7, 6);
+  border-left: 2px solid;
+  border-right: 2px solid;
+  font-family: 'Rajdhani', sans-serif;
 }
 
 .comment-btn {
   position: fixed;
   right: 4rem;
   bottom: 2rem;
-  background-color: blue;
+  background-color: rgba(131, 99, 99, 0.8);
   padding: 20px;
   color: white;
   border-radius: 10em;
   z-index: 999;
+  font-size: 2rem;
+  transform: translateY(-50%);
+  transition: transform 350ms ease-out infinite;
 }
 
 .comment-btn:hover {
   cursor: pointer;
 }
 
+.line {
+  display: block;
+  width: 100%;
+ 
+  height: 5px;
+  background-color: grey;
+  margin: 8rem auto;
+}
+
 @media (max-width: 35em) {
 
     html {
-        font-size: 10px;
+        font-size: 8px;
     }
     .primary-navigation {
         flex-direction: column;
@@ -638,8 +544,13 @@ img {
     }
 
     .menu[aria-expanded="true"] {
-      background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMQfX17C1Smy7LtsthyexuiGxpfe_nb9f1ozRcA1BaEFBfQQc1xQttzhNWgzqkI9zIYK0&usqp=CAU);
-      background-color: transparent;
+        background-image: url(https://lh3.googleusercontent.com/j1FUOjVYC23cNCPXJn-eNvDh2fkzY8EtRIK7uehFhRUf1yBqUC088tcctkR6T_rhQso1FN63RbTV-EskM0NY-jFG7BaDvFWp5SuV0A3YA5-sq_baQ0UIwrZkwNqDDFlv7yWTJ5aKfQ=w2400);
+        background-color: transparent;
+        background-size:2rem;
+        height: 2rem;
+        width: 2rem;
+        border: none;
+        background-color: transparent;
     }
 
     .list-item {
@@ -661,10 +572,12 @@ img {
       
     }
     
-    .img-1 {
-        width: 150px;
-        top: 50%;
-        left: 1.2em;
+    .circle-left-1,
+    .circle-left-2,
+    .circle-right-1,
+    .circle-right-2 {
+        width: 100px;
+        height: 100px;
     }
     
     .first-section-text {
@@ -687,6 +600,7 @@ img {
         font-family: 'Rajdhani', sans-serif;
     }
 
+
     .card-container {
       flex-direction: column;
       justify-content: center;
@@ -695,6 +609,10 @@ img {
 
     .work-paragraph p {
       width: 80%;
+    }
+
+    .list-item {
+        font-size: 2rem;
     }
    
 }
@@ -705,6 +623,7 @@ img {
     .primary-navigation {
         padding-block: 1rem;
         padding-inline: clamp(2rem, 10vw, 8rem);
+        font-size: 1.7rem;
     }
 
     .tabs  {
@@ -718,7 +637,9 @@ img {
 
     body {
       position: relative;
+      
     }
+   
   
 }
 

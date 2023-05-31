@@ -60,7 +60,8 @@ main {
 .header-img {
     position: absolute;
     inset: 0;
-    background-image: url(https://lh3.googleusercontent.com/C5bjvadI0qrq7lYwFqoBlSxAwxzreYCzBRNS9iKgOb9VHMzmfUtxUqhN-QqqAyPIKZr88SL-bpaRxNfXiLMN4IVEtNAty1o8M32cAlOtJaS9aAi1U_Q_7dQOzivD4SI0aIhqpMgrkw=w2400);
+    background-image: url(https://lh3.googleusercontent.com/jrcMGXtM0mMVYji1QfM_htSeg2pDEt1EQ6ZkYhyL33c9WlC3bfYv9PHr0I7-xYgerteewQCZSBHq_WC73FEcAJCZwwrLzlz5_xXyhwUbdCVFxVumZ63MnjV-jKF9zM3pPsMI3fZjpg=w2400);
+    background-size: 800px;
     background-position: center;
     background-repeat: no-repeat;
     z-index: -1;
@@ -72,7 +73,7 @@ main {
     inset: 0;
     background-image: url(https://lh3.googleusercontent.com/mcR2_t4w2EjF7ZXv5_bW6DVgxeS90vj-1u_Jkl9Mu08tA-710eM5nL7jP_BxQmYjFj67-HByqZTBMRz7hJg3D8JU5qlF2Iwndjcdry-Yj1NZEP3tikV3347XleJR-8VlvlXTaFdXVg=w2400);
     background-position: center;
-    background-size: 1000px;
+    background-size: 800px;
     background-repeat: no-repeat;
     z-index: -1;
 }
@@ -87,4 +88,29 @@ main {
     font-size: 1.4rem;
     line-height: 1.2;
     word-spacing: 2px;
+}
+
+.about-text h3 {
+    text-align: center;
+    font-size: 2rem;
+
+}
+
+@media (max-width: 35em) {
+    html {
+        font-size: 8px;
+    }
+
+    main {
+        width: 90%;
+    }
+
+    .about-text {
+        width: 100%;
+    }
+
+    .header-img,
+    .header-img-2 {
+        background-size: 500px;
+    }
 }
